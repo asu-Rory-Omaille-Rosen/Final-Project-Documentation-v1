@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ice Breakers Web App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  
+  <header class="w-full py-4">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6">
+      <div class="text-2xl font-bold">Ice Breakers</div>
+      <ul class="hidden md:flex space-x-8 text-lg">
+        <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="profile.html" class="hover:text-blue-600 transition">Profile</a></li>
+        <li><a href="ConvoCard.html" class="hover:text-blue-600 transition">Conversation Starters</a></li>
+        
+      </ul>
+      <button class="md:hidden text-2xl">☰</button>
+    </nav>
+  </header>
+
+  <section class="relative w-full bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <h1 class="text-5xl font-extrabold leading-tight mb-6">
+          Build your community organically with the help of the Ice Breaker app. 
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+         An application designed to make making friends easier. Through the Ice Breaker web app, you can build 
+         a short profile including your own personal icebreakers to invite new friends and acquaintances. If you're feeling outgoing,
+         you can be the first to say hi. 
+        </p>
+        <div class="flex space-x-4">
+          <a href="profile.html" class="px-6 py-3 bg-black text-white rounded-lg shadow hover:bg-gray-500 transition">
+            Build a profile
+          </a>
+          <a href="ConvoCard.html" class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition">
+            Prompts for conversations
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="w-full h-80 md:h-full rounded-xl overflow-hidden shadow-lg">
+        <img 
+          src="img/alkalenski-antarctica.png"" 
+          alt="Ice Breaking off Ocean - hero Image" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+    </div>
+  </section>
+   <section class="relative w-full bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Text Content -->
+      <div>
+        <h1 class="text-3xl font-extrabold leading-tight mb-6">
+          Once you've built your profile, send local people in your community a "wave" 
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Sending other users a "wave" will share your short profile and Ice-breakers with others in your area. The application will suggest
+          other local users in your area, send them a wave and it will share your profile with them. When you run into them locally,
+          you will have an instant conversations starter built in. 
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="px-6 py-3 bg-black text-white rounded-lg shadow hover:bg-gray-500 transition">
+            Suggest users
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="w-full h-80 md:h-full rounded-xl overflow-hidden shadow-lg">
+        <img 
+          src="img/pandaWaving.gif" 
+          alt="panda waving with the word Hi written next to it" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

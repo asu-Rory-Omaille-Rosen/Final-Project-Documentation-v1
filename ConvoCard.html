@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rory O'Maille"/>
+  <title>Conversational Suggestions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+  
+  <header class="w-full py-4">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6">
+      <div class="text-2xl font-bold">Ice Breakers</div>
+      <ul class="hidden md:flex space-x-8 text-lg">
+        <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="profile.html" class="hover:text-blue-600 transition">Profile</a></li>
+        <li><a href="ConvoCard.html" class="hover:text-blue-600 transition">Conversation Starters</a></li>
+      </ul>
+      <button class="md:hidden text-2xl">☰</button>
+    </nav>
+  </header>
+
+  
+  <section class="w-full py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      
+      <h1 class="text-4xl font-extrabold mb-10">suggestions for sharing your interests</h1>
+
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        <div class="space-y-12">
+
+          <!-- Interests Section -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-3">Your Interests</h2>
+            <p class="text-gray-600 mb-4">
+              Hobbies and interests are a great way to find common ground and connect with others.
+            </p>
+
+            <div class="flex gap-3 mb-4">
+              <input id="interest-input"
+                     type="text"
+                     placeholder=" Hiking, painting, Cooking"
+                     class="flex-1 px-4 py-3 border rounded-lg" />
+
+              <button onclick="addInterest()"
+                      class="px-5 py-3 bg-black text-white rounded-lg hover:bg-gray-500">
+                Add
+              </button>
+            </div>
+
+            <p id="duplicate-warning"
+               class="text-red-600 text-sm mt-2 hidden transition-opacity duration-300 opacity-0">
+               That interest is already on your list.
+            </p>
+
+            <ul id="interest-list" class="space-y-3"></ul>
+          </div>
+          <button onclick="renderConversationAdLib()"
+           class=" px-5 py-3 bg-black text-white rounded-lg hover:bg-gray-500">
+             Small Talk
+        </button>
+
+        
+           
+
+        <!-- conversation card -->
+        <div id="adlib-container"
+             class="flex items-start justify-center">
+          
+           
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
